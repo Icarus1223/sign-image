@@ -1,6 +1,6 @@
 import * as React from "react";
 import "./App.css";
-import bg from "./assets/happy_eid.png";
+// import bg from "./assets/happy_eid.png";
 
 function App() {
   const [username, setUsername] = React.useState("");
@@ -32,8 +32,7 @@ function App() {
   return (
     <div style={{ position: 'relative' }}>
       <div className="happy_card" id="happyCard">
-        <img src={bg} alt="happy eid" />
-        <div className="input-box">
+        <div className="input">
           <input
             type="text"
             name="username"

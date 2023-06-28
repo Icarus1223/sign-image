@@ -1,7 +1,6 @@
 @font-face {
-  font-family: "DinNext";
-  /* src: url("./assets/TheSans-Bold.otf") format("opentype"); */
-  src: url("./assets/din-next-w10-light.ttf") format("opentype");
+  font-family: "TheSans";
+  src: url("./assets/TheSans-Bold.otf") format("opentype");
 }
 
 body {
@@ -11,16 +10,12 @@ body {
 .happy_card { 
 	position: relative;
 	height: 100vh;
+  background-image: url('./assets/happy_eid.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  background-position-y: center;
 }
-
-.happy_card img {
-	height: 100vh;
-	margin: auto;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
 .downloadText {
   position: absolute;
   bottom: 10%;
@@ -46,7 +41,7 @@ body {
   border-radius: 10px;
 }
 
-.glow-on-hover:before {
+/* .glow-on-hover:before {
   content: '';
   background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
   position: absolute;
@@ -61,7 +56,7 @@ body {
   opacity: 0;
   transition: opacity .3s ease-in-out;
   border-radius: 10px;
-}
+} */
 
 .glow-on-hover:active {
   color:black
@@ -87,17 +82,20 @@ body {
   border-radius: 10px;
 }
 
-@keyframes glowing {
+/* @keyframes glowing {
   0% { background-position: 0 0; }
   50% { background-position: 400% 0; }
   100% { background-position: 0 0; }
+} */
+
+.input {
+  display: flex;
+  justify-content: center;
 }
 
 input {
   position: absolute;
-  bottom: 44%;
-	left: 0;
-	right: 0;
+  bottom: 45%;
   margin: 0 auto;
 	height: 20px;
 	width: 200px;
@@ -105,7 +103,7 @@ input {
 	border: 1px solid #eee;
 	padding: 10px 20px;
 	opacity: 1;
-	font-family: "DinNext";
+	font-family: "TheSans", serif;
 	text-align: center;
 }
 
